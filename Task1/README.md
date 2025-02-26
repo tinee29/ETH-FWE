@@ -1,4 +1,4 @@
-# Web Foundations Exercise 1: HTML + CSS
+# Web Foundations: HTML + CSS
 
 This exercise focuses on designing web components and layouts using **HTML** and **CSS**. The task involves creating a card component, implementing a responsive page layout, designing a form, adding CSS transitions, and testing for **WCAG 2.1** accessibility compliance.
 
