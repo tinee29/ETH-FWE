@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Document</title>
+    <link href="layout.css" rel="stylesheet" />
+
+    <script src="./main.ts" type="module"></script>
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <ul>
+          <li class="nav-item">
+            <a href="/" title="Home"
+              ><i class="fa-solid fa-home"></i> <span class="sidebar-label">Home</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="/" title="Dashboard"
+              ><i class="fa-solid fa-dashboard"></i> <span class="sidebar-label">Dashboard</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="/" title="Profile"
+              ><i class="fa-solid fa-user"></i> <span class="sidebar-label">Profile</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" title="Contact"
+              ><i class="fa-solid fa-message"></i> <span class="sidebar-label">Contact</span></a
+            >
+          </li>
+        </ul>
+      </section>
+      <div class="content">
+        <header>
+          <h1>Contact</h1>
+        </header>
+    
+        <main>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone number:</label>
+              <input type="phone" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g., 123-456-78-90">
+            </div>
+            <div class="form-group">
+              <label for="age">Age:</label>
+              <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+              <label for="favorite">What do you like the most?</label>
+              <select id="favorite" name="favorite" required>
+                <option value="JS">JS</option>
+                <option value="CSS">CSS</option>
+                <option value="HTML">HTML</option>
+                <option value="cant-decide">None</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message:</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+              <div></div>
+              </div>
+              <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+              </div>
+            </div>
+          </form>
+        </main>
+        
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div>Made with <i class="fa-solid fa-heart"></i> by David Sichau</div>
+  </footer>
+</html>

@@ -1,0 +1,166 @@
+:root {
+  --border-color: #ccc;
+  --border-radius: 1rem;
+  --space: 1rem;
+}
+
+body {
+  overflow: hidden;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the page takes at least the viewport height */
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+body >  div > section {
+  border-right: 1px solid var(--border-color);
+  flex: 0;
+  & ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    padding: var(--space);
+    width: 150px;
+    & li {
+      margin-bottom: 10px;
+    }
+    & li > a {
+      color: #999;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    & li > a:hover {
+      color: black;
+    }
+  }
+}
+
+body > div > div > header {
+  border-bottom: 1px solid var(--border-color);
+  padding: var(--space);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & h1 {
+    font-size: 1.75rem;
+    margin: 0;
+  }
+}
+
+body > div > div >  main {
+  padding: var(--space);
+  max-height: calc(100vh - 100px); /* Adjust as needed */
+  overflow-y: scroll;
+  flex-grow: 1;
+}
+
+body > footer {
+  border-top: 1px solid var(--border-color);
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.header-icons{
+  display: flex;
+}
+.header-icons i {
+  margin-left: 10px; /* Add spacing between icons if needed */
+}
+
+
+
+
+
+
+
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout by default */
+  gap: 1rem;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 300px 1fr; /* Label and input in two columns, auto for fixed label width */
+  gap: 1rem;
+  align-items: top; /* Vertically align label and input */
+}
+
+.contact-form label {
+  font-weight: bold;
+  text-align: left;
+  padding-right: 1rem; /* Add some spacing between label and input */
+  white-space: nowrap; /* Prevent label from wrapping to the next line */
+  width: 150px; /* Fixed width for the label column */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="phone"],
+.contact-form input[type="number"],
+.contact-form select,
+.contact-form textarea {
+  width: 300px; /* Fixed width for input elements */
+  max-width: 100%; /* Ensure the input does not exceed 100% width */
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  line-height: 1;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .form-group:last-child {
+  grid-template-columns: 300px 1fr; /* Two columns for buttons */
+}
+
+.contact-form button[type="submit"],
+.contact-form button[type="reset"] {
+  width: 80px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+
+/* Media query for responsive layout */
+@media screen and (max-width: 768px) {
+  contact-form .form-group {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+  section {
+    width: 50px; /* Decrease the width for small screens */
+  }
+  
+  section ul li span.sidebar-label {
+    display: none; /* Hide the text labels on small screens */
+  }
+  .contact-form {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+}
+
+.nav-item:hover {
+  transform: scale(1.2); /* Scale up the menu item on hover */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+
