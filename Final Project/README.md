@@ -30,11 +30,3 @@ The web app is hosted on Vercel and can be accessed here:
 
 ---
 
-## How to Run
-
-### Backend
-
-1. Navigate to the `backend-project` directory:
-
-   ```bash
-   cd backend-project
