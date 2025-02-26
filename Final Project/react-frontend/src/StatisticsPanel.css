@@ -1,0 +1,44 @@
+.statistics-panel {
+    min-width: 400px; /* Or any minimum width you prefer */
+    display: flex;
+    flex-direction: column;
+    background-color: #e8e8e8; /* Medium gray */
+    gap: 15px;
+    border-radius: 15px;
+}
+
+/* Title Styling */
+.statistics-panel .plot-title {
+    font-size: 16px; /* Smaller font size */
+    font-weight: normal; /* Normal font weight */
+    color: #252525; /* Softer color */
+    padding: 5px 10px; /* Padding around the title */
+    margin-bottom: 10px; /* Margin below the title */
+}
+
+.barplot-title{
+    color: #252525; /* Choose a color that fits your design */
+    text-align: center; /* Center the title */
+    margin-bottom: 10px; /* Add some space below the title */
+    padding: 5px; /* Optional: add padding for better spacing */
+    font-size: 14px;
+
+}
+.statistics-header {
+    font-size: 20px; /* Example font size */
+    font-weight: bold; /* Bold font weight */
+    color: #252525; /* Example color */
+}
+
+.divider-line {
+    border: 0;
+    height: 1.5px; /* Thickness of the line */
+    background-color: #828282; /* Color of the line */
+    margin: 10px 0; /* Space above and below the line */
+}
+
+@media (max-width: 1000px) {
+    .statistics-panel {
+        flex: 0 1 25%; /* Now it can shrink if needed */
+    }
+}

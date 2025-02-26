@@ -1,0 +1,159 @@
+/* FilterHeader.css */
+.filter-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255); /* Darker gray for better contrast */
+    gap: 5px;
+}
+
+.filt-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally in a column layout */
+    gap: 5px;
+}
+.filt-component label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #495057; /* Dark grey text */
+    margin-bottom: 5px;
+    text-transform: uppercase; /* Optional: Transform text to uppercase */
+    min-width: 200px;
+    max-width: 100%;
+    text-align: center; /* Center the text of the label */
+
+}
+
+.filter-button {
+    background-color: #e9ecef; /* Light grey button */
+    color: #495057; /* Dark grey text */
+    border: none;
+    border-radius: 15px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+    min-width: 120px;
+    white-space: nowrap;
+    min-width: 80px; /* Set a minimum width */
+    max-width: 100%; /* Ensure buttons don't exceed their container's width */
+    flex: 1 1 auto; /* Allows buttons to grow and shrink */
+}
+
+.buttons-component {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the buttons */
+    gap: 3px;
+    flex-wrap: wrap; /* Allow buttons to wrap if needed */
+    width: 100%; /* Take the full width of the parent container */
+}
+
+.filter-button.Trainstations:hover {
+    background-color: #0061c976; /* Slightly darker blue on hover */
+    transform: translateY(-2px); /* Slight elevation effect on hover */
+    color: white
+}
+
+.filter-button.Parkingspaces:hover {
+    background-color: #ff8c0076; /* Slightly darker orange on hover */
+    transform: translateY(-2px); /* Slight elevation effect on hover */
+    color: white
+}
+.filter-button.Tramstations:hover{
+    background-color :#009b4d76 ; /* Slightly darker green on hover */
+    transform: translateY(-2px); /* Slight elevation effect on hover */
+    color: white;
+}
+
+.filter-button.Distance:hover {
+    background-color: #ffd00076; /* Slightly darker grey on hover */
+    transform: translateY(-2px); /* Slight elevation effect on hover */
+    color: white
+}   
+
+.filter-button.selected.Trainstations,
+.filter-button.selected.WC,
+.filter-button.selected.Ramps{
+    background-color: #0061c9;
+    color: white;
+    border-color: #0061c9;
+}
+
+.filter-button.deactivated {
+    background-color: #00000035;
+    color: #00000035;
+    border-color: #00000035;
+}
+
+.filter-button.selected.Parkingspaces {
+    background-color: #ff8c00;
+    color: white;
+    border-color: #ff6b00;
+}
+
+.filter-button.selected.Distance{
+    background-color: #ffd000;
+    color: white;
+    border-color: #ffd000
+}
+
+.filter-button.selected.Tramstations{
+    background-color: #009b4d;
+    color: white;
+    border-color: #009b4d;
+}
+.dropdown-button {
+  background-color: #e9ecef; /* Same as filter-button */
+  color: #495057; /* Same as filter-button */
+  border: none;
+  border-radius: 15px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer; /* To indicate it's clickable */
+  /* Add more styles as per your design */
+}
+
+.dropdown-button.deactivated {
+    background-color: #00000035;
+    color: #00000035;
+    border-color: #00000035;
+}
+
+/* Style for hover effect */
+.dropdown-button:hover {
+  background-color: #e9ecef; /* Slightly darker or different color */
+}
+
+/* Style to make it appear like a button */
+.dropdown-button {
+  text-align: center; /* Align text to the left */
+}
+
+.dropdown-button:disabled {
+    background-color: #00000035;
+    color: #00000035;
+    border-color: #00000035;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 1300px) {
+    .filter-button {
+        padding: 5px 10px; /* Reduce padding */
+        font-size: 14px; /* Reduce font size */
+        min-width: 80px; /* Reduce minimum width */
+    }
+
+    .filter-header {
+        flex-direction: column; /* Stack the elements vertically */
+        gap: 5px;
+    }
+
+    .buttons-component {
+        flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+        justify-content: center; /* Ensure buttons stay centered on smaller screens */
+
+    }
+}

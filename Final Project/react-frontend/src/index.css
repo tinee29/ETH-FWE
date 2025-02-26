@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body, html {
+  margin: 0;
+  height: 100vh;
+}
+
+#root {
+  height: 100vh;
+}
+
+/* Set the height of the map container */
+#map {
+  height: 100vh;
+}
